@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import { useRouter } from "next/router";
 import { useUserContext } from "../context/user/user-context";
 import { useEffect } from "react";
+import { getData } from "./api/login";
 
 export default function SignIn() {
   const [err, setErr] = useState(false);
@@ -33,18 +34,11 @@ export default function SignIn() {
     e.preventDefault();
     if (user.username != "" && user.password != "") {
       try {
-        const res = await fetch(
-          process.env.NEXT_PUBLIC_BASE_URL + "/api/login",
-          {
-            method: "POST",
-            body: JSON.stringify({ ...user }),
-          }
-        );
-        const data = await res.json();
+        const data = await getData(user);
         window.localStorage.setItem("token", data.authData.token);
         userDispatch(data.userData);
         router.push("/");
-      } catch (error) {
+      } catch {
         console.log("Invalid Credentials");
         setErr(true);
       }
