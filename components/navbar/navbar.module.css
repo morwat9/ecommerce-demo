@@ -1,0 +1,51 @@
+.nav-bar {
+  height: 5em;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgb(19, 26, 34);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  list-style: none;
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+  padding-right: 1em;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-logo {
+  flex-grow: 1;
+  padding-left: 2em;
+}
+
+.sub-nav {
+  height: 3.5em;
+  width: 100%;
+  background-color: rgb(35, 47, 62);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome {
+  color: white;
+  font-weight: 300;
+  padding-left: 2em;
+}
+
+.cart {
+  color: white;
+  padding-right: 3.5em;
+  cursor: pointer;
+}

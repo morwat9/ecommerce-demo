@@ -1,0 +1,23 @@
+.picture {
+  height: 14em;
+  width: 13em;
+  position: relative;
+  min-width: 10em;
+  max-height: 20em;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.wrapper {
+  min-height: 15em;
+  max-width: 12em;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.button-group {
+  margin-top: 1em;
+}

@@ -1,0 +1,17 @@
+.wrapper {
+  margin: 1em;
+  min-height: 20em;
+  min-width: 12em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.picture {
+  height: 15em;
+  width: 14em;
+  position: relative;
+  cursor: pointer;
+  min-height: 10em;
+  min-width: 8em;
+}

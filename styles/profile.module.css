@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  min-height: 75.5vh;
+  align-items: center;
+}
+
+.labels {
+  text-align: right;
+  padding: 1em;
+}
+
+.details {
+  padding: 1em;
+}

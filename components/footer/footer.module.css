@@ -1,0 +1,16 @@
+.footer {
+  border-top: 1px solid #747474;
+  flex-shrink: 0;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  background-color: rgb(35, 47, 62);
+  color: white;
+  margin-top: 2em;
+}
+
+.footer span {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}

@@ -1,0 +1,68 @@
+.wrapper {
+  height: 12em;
+  width: 55em;
+  display: flex;
+  background-color: white;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  padding: 1em 1em;
+}
+
+.picture {
+  height: 12em;
+  width: 10em;
+  position: relative;
+  min-width: 10em;
+  max-height: 12em;
+  cursor: pointer;
+}
+
+.detail {
+  flex-grow: 1;
+  padding: 1em 1em 1em 4em;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #ff9900;
+}
+
+.rating {
+  display: inline-block;
+  font-weight: 300;
+}
+
+.description {
+  padding: 1em;
+  font-weight: 300;
+}
+
+.price {
+  font-size: 1.5em;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 1;
+  width: 100%;
+  border-bottom: 2px solid #cecece;
+}
+
+@media only screen and (max-width: 768px) {
+  .description {
+    display: none;
+  }
+  .wrapper {
+    width: 85vw;
+  }
+
+  .rating {
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+  }
+}
