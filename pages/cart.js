@@ -6,9 +6,9 @@ import { useUserContext } from "../context/user/user-context";
 import CartItem from "../components/cart/cart-item";
 
 export default function Cart() {
-  const [cart, setCart] = useState(
+  const [cart, setCart] =
+    useState();
     // JSON.parse(window.localStorage.getItem("cart"))
-  );
   const { userState, userDispatch } = useUserContext();
 
   const router = useRouter();
@@ -38,7 +38,7 @@ export default function Cart() {
     if (!window.localStorage.getItem("token")) {
       router.push("/");
     }
-    setCart(JSON.parse(window.localStorage.getItem("cart")))
+    setCart(JSON.parse(window.localStorage.getItem("cart")));
   }, []);
 
   if (cart === undefined || cart.length === 0) {
