@@ -57,9 +57,7 @@ export default function ProductPage(product) {
             <StarRating value={Math.floor(product.rating.rate)} />
             <span>{" (" + product.rating.count + ")"}</span>
           </div>
-          <div className={styles["description"]}>
-            <span>{product.description}</span>
-          </div>
+          <div className={styles["description"]}>{product.description}</div>
           <div className={styles["price"]}>
             <span>{formatter.format(product.price)}</span>
           </div>
