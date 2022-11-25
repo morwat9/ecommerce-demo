@@ -84,7 +84,7 @@ export default function Navbar() {
         <ul className={styles["nav-links"]}>
           <li>
             <Link href="/shop">
-              <Button color="warning">Shop</Button>
+              <Button sx={{ color: "white" }}>Shop</Button>
             </Link>
           </li>
           <li>
@@ -96,7 +96,7 @@ export default function Navbar() {
                   aria-haspopup="true"
                   aria-expanded={open ? "true" : undefined}
                   onClick={handleClick}
-                  color="warning"
+                  sx={{ color: "white" }}
                 >
                   <AccountBoxIcon></AccountBoxIcon>
                 </Button>
@@ -117,7 +117,7 @@ export default function Navbar() {
               </div>
             ) : (
               <Link href="/sign-in">
-                <Button color="warning">Sign In</Button>
+                <Button sx={{ color: "white" }}>Sign In</Button>
               </Link>
             )}
           </li>
@@ -131,12 +131,14 @@ export default function Navbar() {
         </div>
         {userState.username && (
           <ButtonBase
-            className={styles["cart"]}
+            sx={{ mr: "32px", color: "white" }}
             onClick={() => router.push("/cart")}
           >
-            <Badge badgeContent={getCartAmount()} color="error">
-              <ShoppingCartIcon></ShoppingCartIcon>
-            </Badge>
+            <div>
+              <Badge badgeContent={getCartAmount()} color="error">
+                <ShoppingCartIcon></ShoppingCartIcon>
+              </Badge>
+            </div>
           </ButtonBase>
         )}
       </div>
