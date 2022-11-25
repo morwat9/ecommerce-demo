@@ -59,10 +59,16 @@
   }
   .wrapper {
     width: 85vw;
+    align-items: center;
   }
-
   .rating {
     padding-top: 1em;
     padding-bottom: 0.5em;
+  }
+  .title {
+    font-size: 1.15rem;
+  }
+  .price {
+    font-size: 1.25rem;
   }
 }
