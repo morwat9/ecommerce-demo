@@ -44,4 +44,10 @@
   .description {
     width: 14em;
   }
+  .picture {
+    height: 10em;
+    width: 10em;
+    min-height: 15em;
+    min-width: 15em;
+  }
 }
