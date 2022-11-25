@@ -32,6 +32,7 @@
   font-size: 1.5rem;
   width: 25em;
   font-weight: 300;
+  word-wrap: break-word;
 }
 
 .price {
@@ -41,6 +42,6 @@
 
 @media only screen and (max-width: 768px) {
   .description {
-    width: 15em;
+    width: 14em;
   }
 }
